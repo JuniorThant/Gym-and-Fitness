@@ -1,0 +1,184 @@
+
+/*---------------------------For The Whole Body-----------------------------------------------*/
+
+*{
+	font-family: 'Roboto', sans-serif;
+}
+:root{
+	--firstcolor:#0d6efd;
+	--secondcolor:#dc3545;
+	--thirdcolor:#ffffff;
+	--fourthcolor:#fd7e14;
+}
+
+body{
+	background: linear-gradient(to left, var(--firstcolor), var(--secondcolor));
+	overflow-x: hidden;
+}
+
+.main-heading{
+	font-size: 3rem;
+	color: var(--thirdcolor);
+	text-align: center;
+}
+
+.sub-heading{
+	font-size: 1rem;
+	color: var(--fourthcolor);
+	text-align: center;
+}
+
+.heading-line{
+
+	width: 100px;
+	height: 2px;
+	background-color: var(--fourthcolor);
+	margin: 30px auto;
+}
+
+/*---------------------------For Navigation Bar-----------------------------------------------*/
+
+nav{
+	background: linear-gradient(to left, var(--firstcolor), var(--secondcolor));
+}
+
+#header{
+	min-height: 1000px;
+	width: 100%;
+	position: relative;
+}
+
+#header video{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit:cover;
+	z-index: -2;
+}
+
+#header .overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit:cover;
+	z-index: -2;
+	background: linear-gradient(to left, var(--firstcolor), var(--secondcolor));
+	mix-blend-mode: overlay;
+}
+
+/*---------------------------For Service-----------------------------------------------*/
+
+.service-card img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover; 
+	transition: 0.5s;
+	object-position: 100% 20%;
+
+	
+}
+
+.service-card img:hover {
+	transform: scale(1.05);
+}
+
+/*---------------------------For Pricing Table-----------------------------------------------*/
+
+.plan-2-card{
+	position: relative;
+	overflow: hidden;
+}
+
+.recommended{
+	width: 200px;
+	background-color: var(--thirdcolor);
+	position: absolute;
+	top: 20px;
+	right: -50px;
+	font-size: 0.9rem;
+	transform: rotate(30deg);
+
+}
+
+/*---------------------------For News-----------------------------------------------*/
+
+#news img{
+	width: 400px;
+	height: 350px;
+	object-fit: cover;
+}
+
+/*---------------------------For Testimonial-----------------------------------------------*/
+
+#testimonial img{
+	width: 100%;
+	height: 380px;
+	object-fit: cover;
+	object-position: 100% 10%;
+
+}
+
+.carousel-control-prev{
+	position: absolute;
+	left: -8%;
+}
+.carousel-control-prev-icon{
+	width: 30px;
+	height: 30px;
+}
+
+.carousel-control-next{
+	position: absolute;
+	right: -8%;
+}
+
+.carousel-control-next-icon{
+	width: 30px;
+	height: 30px;
+}
+
+.carousel-indicators button[type="button"]{
+	width: 30px;
+	height: 20px;
+	margin: 5px;
+}
+
+/*---------------------------For FAQ-----------------------------------------------*/
+
+.accordion-button:not(.collapsed){
+	background-color: var(--fourthcolor);
+	color: var(--thirdcolor);
+}
+
+/*---------------------------For Contact Us-----------------------------------------------*/
+
+#contact{
+	background-image: url(images/body5.jpg);
+	width: 100%;
+	height: 600px;
+	opacity: 0.7;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+
+}
+
+/*---------------------------For Up Arrow-----------------------------------------------*/
+
+.uparrow{
+	display: block;
+	width: 40px;
+	height: 50px;
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	color: var(--thirdcolor);
+	background-color: var(--fourthcolor);
+	border-radius: 5%;
+	font-size: 2rem;
+}
